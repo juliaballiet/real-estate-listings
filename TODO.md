@@ -2,10 +2,10 @@
 
 - [ ] basic setup
     - [X] spin up server
-    - [ ] set up html with ng-view
-    - [ ] nav bar
-    - [ ] source client.js, angular
-    - [ ] config routes
+    - [X] set up html with ng-view
+    - [X] nav bar
+    - [X] source client.js, angular
+    - [X] config routes
     - [X] set up router
     - [ ] set up database
 
