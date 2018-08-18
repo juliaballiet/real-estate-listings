@@ -28,7 +28,7 @@
         - [X] display listings
         - [X] delete buttons for listings
     - [ ] controller
-        - [ ] get route for sale
+        - [X] get route for sale
         - [ ] delete route
     - server
         - [ ] get route for sale

@@ -35,5 +35,15 @@ router.post('/', (req, res) => {
                 })
 })
 
+router.get('/sale', (req, res) => {
+    const query = `SELECT * FROM "listings" WHERE "type" = 'sale';`;
+    pool.query(query).then((results) => {
+        res.send(results.rows);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
 // exports
 module.exports = router;
