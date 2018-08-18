@@ -45,5 +45,17 @@ router.get('/sale', (req, res) => {
     })
 })
 
+router.delete('/:id', (req, res) => {
+    const listingId = req.params.id;
+    const query = `DELETE FROM "listings" WHERE "id" = $1;`;
+    pool.query(query, [listingId]).then((result) => {
+        console.log(result);
+        res.sendStatus(200);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
 // exports
 module.exports = router;
