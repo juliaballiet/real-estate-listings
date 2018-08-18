@@ -1,17 +1,22 @@
 #TO DO
 
-- [ ] basic setup
+- [X] basic setup
     - [X] spin up server
     - [X] set up html with ng-view
     - [X] nav bar
     - [X] source client.js, angular
     - [X] config routes
     - [X] set up router
-    - [ ] set up database
+    - [X] set up database
 
 - [ ] home
     - [ ] html view page
-        - [ ] inputs to add a new listing
+        - [X] inputs to add a new listing
+            - cost
+            - sqft
+            - type
+            - city
+            - image_path
         - [ ] choose an image for listing
     - [ ] controller 
         - [ ] post route for new listings

@@ -21,6 +21,19 @@ pool.on('error', (error) => {
 });
 
 // routes
+router.post('/', (req, res) => {
+    console.log(req.body);
+    const newListing = req.body;
+    const query = `INSERT INTO "listings" ("cost", "sqft", "type", "city", "image_path")
+                    VALUES ($1, $2, $3, $4, $5);`;
+    pool.query(query, [newListing.cost, newListing.sqft, newListing.type, 
+                newListing.city, newListing.image_path]).then(() => {
+                    res.sendStatus(201);
+                }).catch((error) => {
+                    console.log('error: ', error);
+                    res.sendStatus(500);
+                })
+})
 
 // exports
 module.exports = router;
