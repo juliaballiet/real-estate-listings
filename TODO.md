@@ -23,27 +23,27 @@
     - [X] server
         - [X] post route for new listings
 
-- [ ] for sale
+- [X] for sale
     - [X] html view page
         - [X] display listings
         - [X] delete buttons for listings
-    - [ ] controller
+    - [X] controller
         - [X] get route for sale
-        - [ ] delete route
-    - server
-        - [ ] get route for sale
-        - [ ] delete route
+        - [X] delete route
+    - [X] server
+        - [X] get route for sale
+        - [X] delete route
 
-- [ ] for rent
-    - [ ] html view page
-        - [ ] display listings
-        - [ ] delete buttons for listings
-    - [ ] controller
-        - [ ] get route for rent
-        - [ ] delete route
-    - server
-        - [ ] get route for rent
-        - [ ] delete route
+- [X] for rent
+    - [X] html view page
+        - [X] display listings
+        - [X] delete buttons for listings
+    - [X] controller
+        - [X] get route for rent
+        - [X] delete route
+    - [X] server
+        - [X] get route for rent
+        - [X] delete route
 
 - [ ] css
     - [ ] display listings as "cards"

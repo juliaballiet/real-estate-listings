@@ -45,6 +45,16 @@ router.get('/sale', (req, res) => {
     })
 })
 
+router.get('/rent', (req, res) => {
+    const query = `SELECT * FROM "listings" WHERE "type" = 'rent';`;
+    pool.query(query).then((results) => {
+        res.send(results.rows);
+    }).catch((error) => {
+        console.log(error);
+        res.sendStatus(500);
+    })
+})
+
 router.delete('/:id', (req, res) => {
     const listingId = req.params.id;
     const query = `DELETE FROM "listings" WHERE "id" = $1;`;

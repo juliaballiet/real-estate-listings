@@ -1,0 +1,20 @@
+<table>
+        <thead>
+            <tr>
+                <th>Photo</th>
+                <th>Cost</th>
+                <th>Square Feet</th>
+                <th>City</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="listing in rc.forRentArray">
+                <td><img src="images/{{listing.image_path}}"></td>
+                <td>{{listing.cost}}</td>
+                <td>{{listing.sqft}}</td>
+                <td>{{listing.city}}</td>
+                <td><button ng-click="rc.deleteListing(listing.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
