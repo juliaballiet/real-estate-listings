@@ -15,6 +15,7 @@ realEstateApp.controller('HomeController', function($http){
             console.log('back from server with: ', response.data);
         }).catch(function(error){
             console.log('back from server with: ', error);
+            alert('there was an error sending the data');
         })
     }
 

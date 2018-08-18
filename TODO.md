@@ -9,24 +9,24 @@
     - [X] set up router
     - [X] set up database
 
-- [ ] home
-    - [ ] html view page
+- [X] home
+    - [X] html view page
         - [X] inputs to add a new listing
             - cost
             - sqft
             - type
             - city
             - image_path
-        - [ ] choose an image for listing
-    - [ ] controller 
-        - [ ] post route for new listings
-    - [ ] server
-        - [ ] post route for new listings
+        - [X] choose an image for listing
+    - [X] controller
+        - [X] post route for new listings
+    - [X] server
+        - [X] post route for new listings
 
 - [ ] for sale
-    - [ ] html view page
-        - [ ] display listings
-        - [ ] delete buttons for listings
+    - [X] html view page
+        - [X] display listings
+        - [X] delete buttons for listings
     - [ ] controller
         - [ ] get route for sale
         - [ ] delete route
