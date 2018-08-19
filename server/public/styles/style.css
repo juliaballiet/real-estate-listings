@@ -1,0 +1,54 @@
+body {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    background-color: lightgrey;
+}
+
+li a {
+    display: inline-block;
+    width: 150px;
+    padding: 15px;
+    color: white;
+}
+
+li {
+    display: inline-block;
+}
+
+li a:hover {
+    background-color: grey;
+}
+
+span {
+    margin: 20px;
+}
+
+.card {
+    display: inline-block;
+    width: 280px;
+    margin: 20px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.card img {
+    max-height: 150px;
+    max-width: 245px;
+    border: 2px solid white;
+}
+
+button {
+    float: right;
+    outline: none;
+    border: none;
+    background-color: lightgrey;
+    margin: 5px;
+}
+
+button:hover {
+    color: red;
+}

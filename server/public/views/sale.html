@@ -1,4 +1,14 @@
-<table>
+<div ng-repeat="listing in sc.forSaleArray" class="card">
+    <button ng-click="sc.deleteListing(listing.id)">delete X</button>
+    <img ng-src="images/{{listing.image_path}}">
+    <div>
+        <h2>${{listing.cost}}</h3>
+            <p>{{listing.sqft}} sq.ft.
+                <span> | </span>{{listing.city}}</p>
+    </div>
+</div>
+
+<!-- <table>
     <thead>
         <tr>
             <th>Photo</th>
@@ -10,11 +20,11 @@
     </thead>
     <tbody>
         <tr ng-repeat="listing in sc.forSaleArray">
-            <td><img src="images/{{listing.image_path}}"></td>
+            <td><img ng-src="images/{{listing.image_path}}"></td>
             <td>{{listing.cost}}</td>
             <td>{{listing.sqft}}</td>
             <td>{{listing.city}}</td>
             <td><button ng-click="sc.deleteListing(listing.id)">Delete</button></td>
         </tr>
     </tbody>
-</table>
+</table> -->

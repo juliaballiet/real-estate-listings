@@ -1,4 +1,14 @@
-<table>
+<div ng-repeat="listing in rc.forRentArray" class="card">
+    <button ng-click="rc.deleteListing(listing.id)">delete X</button>
+    <img ng-src="images/{{listing.image_path}}">
+    <div>
+        <h2>${{listing.cost}}</h3>
+            <p>{{listing.sqft}} sq.ft.
+                <span> | </span>{{listing.city}}</p>
+    </div>
+</div>
+
+<!-- <table>
         <thead>
             <tr>
                 <th>Photo</th>
@@ -17,4 +27,4 @@
                 <td><button ng-click="rc.deleteListing(listing.id)">Delete</button></td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
