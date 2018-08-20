@@ -1,7 +1,7 @@
 <div id="new-listing">
 <h3>Create New Listing:</h3>
 <!-- form to submit new listing to database -->
-<form ng-submit="hc.submitNewListing(hc.newListing)">
+<form ng-model="hc.form" ng-submit="hc.submitNewListing(hc.newListing)">
     <p>
         cost:
         <input ng-model="hc.newListing.cost" type="number" required>

@@ -1,10 +1,7 @@
 realEstateApp.controller('HomeController', function($http){
     let vm = this;
 
-    console.log('hc');
-
     vm.submitNewListing = function(listing){
-        console.log(listing);
         dataToSend = listing;
 
         $http({
@@ -12,9 +9,14 @@ realEstateApp.controller('HomeController', function($http){
             url: '/listings',
             data: dataToSend
         }).then(function(response){
-            console.log('back from server with: ', response.data);
+            vm.newListing = {
+                cost: '',
+                sqft: '',
+                type: '',
+                city: '',
+                image_path: ''
+            }
         }).catch(function(error){
-            console.log('back from server with: ', error);
             alert('there was an error sending the data');
         })
     }
