@@ -1,11 +1,7 @@
 body {
     max-width: 980px;
     margin: 0 auto;
-}
-
-ul {
-    list-style-type: none;
-    background-color: lightgrey;
+    font-family: 'Lekton', sans-serif;
 }
 
 li a {
@@ -20,19 +16,47 @@ li {
 }
 
 li a:hover {
-    background-color: grey;
+    background-color: #87987F;
 }
 
 span {
     margin: 20px;
 }
 
+ul {
+    list-style-type: none;
+    background-color: #AFB7AC;
+}
+
+.big-card {
+    display: inline-block;
+    width: 450px;
+    margin: 20px;
+    background-color: #AFB7AC;
+    text-align: center;
+    margin: 20px 92px;
+    box-shadow: 3px 3px 3px grey;
+}
+
 .card {
     display: inline-block;
     width: 280px;
     margin: 20px;
-    background-color: lightgrey;
+    background-color: #AFB7AC;
     text-align: center;
+    box-shadow: 3px 3px 3px grey;
+}
+
+.delete {
+    float: right;
+    outline: none;
+    border: none;
+    background-color: #AFB7AC;
+    margin: 5px;
+}
+
+.big-card img {
+    border: 2px solid white;
 }
 
 .card img {
@@ -41,14 +65,24 @@ span {
     border: 2px solid white;
 }
 
-button {
-    float: right;
-    outline: none;
-    border: none;
-    background-color: lightgrey;
-    margin: 5px;
+.delete:hover {
+    color: red;
+    cursor: pointer;
 }
 
-button:hover {
-    color: red;
+#new-listing {
+    background-color: #AFB7AC;
+    margin: 20px;
+    padding: 20px;
+}
+
+#new-listing button {
+    font-size: 1.25em;
+    background-color: #87987F;
+    border: none;
+    padding: 10px;
+}
+
+#new-listing button:hover {
+    cursor: pointer;
 }

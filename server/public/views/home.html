@@ -1,19 +1,42 @@
+<div id="new-listing">
+<h3>Create New Listing:</h3>
+<!-- form to submit new listing to database -->
 <form ng-submit="hc.submitNewListing(hc.newListing)">
-    <input ng-model="hc.newListing.cost" type="number" placeholder="cost">
-    <input ng-model="hc.newListing.sqft" type="number" placeholder="sqft">
-    <select ng-model="hc.newListing.type">
-        <option value="rent">For Rent</option>
-        <option value="sale">For Sale</option>
-    </select>
-    <input ng-model="hc.newListing.city" type="text" placeholder="city">
-    <select ng-model="hc.newListing.image_path">
-        <option value="classic-flats.jpg">Classic Flats</option>
-        <option value="haunted.png">Haunted</option>
-        <option value="older.jpg">Older</option>
-        <option value="rental.jpg">Rental #1</option>
-        <option value="rental2.jpg">Rental #2</option>
-        <option value="shiny.jpg">Shiny</option>
-        <option value="stony.jpg">Stony</option>
-    </select>
-    <button>Submit</button>
+    <p>
+        cost:
+        <input ng-model="hc.newListing.cost" type="number" required>
+    </p>
+    <p>
+        sqft:
+        <input ng-model="hc.newListing.sqft" type="number" required>
+    </p>
+    <!-- select listing type -->
+    <p>
+        type of listing:
+        <select ng-model="hc.newListing.type" required>
+            <option value="rent">For Rent</option>
+            <option value="sale">For Sale</option>
+        </select>
+    </p>
+    <p>
+        city:
+        <input ng-model="hc.newListing.city" type="text" required>
+    </p>
+    <!-- select photo type -->
+    <p>
+        image:
+        <select ng-model="hc.newListing.image_path" required>
+            <option value="classic-flats.jpg">Classic Flats</option>
+            <option value="haunted.png">Haunted</option>
+            <option value="older.jpg">Older</option>
+            <option value="rental.jpg">Rental #1</option>
+            <option value="rental2.jpg">Rental #2</option>
+            <option value="shiny.jpg">Shiny</option>
+            <option value="stony.jpg">Stony</option>
+        </select>
+    </p>
+    <p>
+        <button>Submit</button>
+    </p>
 </form>
+</div>

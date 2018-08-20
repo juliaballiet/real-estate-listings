@@ -45,13 +45,13 @@
         - [X] get route for rent
         - [X] delete route
 
-- [ ] css
-    - [ ] display listings as "cards"
+- [X] css
+    - [X] display listings as "cards"
 
 ###STRETCH GOALS
 
 - [X] Create a dropdown/select so that the user doesn't need to type sale or rent for every new listing
 - [X] Create a dropdown/select so that the user doesn't need to type the image url for every new listing
-- [ ] Display the least expensive property featured prominently at the top of the view
+- [X] Display the least expensive property featured prominently at the top of the view
 - [ ] Ability to search or filter by various parameters (try doing this using a server side route with a query parameter)
 - [ ] Add other images to your application

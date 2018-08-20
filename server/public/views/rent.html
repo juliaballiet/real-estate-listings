@@ -1,5 +1,17 @@
+<!-- display lowest price listing most prominently -->
+<div class="big-card">
+    <button class="delete" ng-click="rc.deleteListing(rc.lowestPrice.id)">delete X</button>
+    <img ng-src="images/{{rc.lowestPrice.image_path}}">
+    <div>
+        <h1>${{rc.lowestPrice.cost}}</h1>
+        <p>{{rc.lowestPrice.sqft}} sq.ft.
+            <span> | </span>{{rc.lowestPrice.city}}</p>
+    </div>
+</div>
+
+<!-- repeat array of remaining listing -->
 <div ng-repeat="listing in rc.forRentArray" class="card">
-    <button ng-click="rc.deleteListing(listing.id)">delete X</button>
+    <button class="delete" ng-click="rc.deleteListing(listing.id)">delete X</button>
     <img ng-src="images/{{listing.image_path}}">
     <div>
         <h2>${{listing.cost}}</h3>
@@ -7,24 +19,3 @@
                 <span> | </span>{{listing.city}}</p>
     </div>
 </div>
-
-<!-- <table>
-        <thead>
-            <tr>
-                <th>Photo</th>
-                <th>Cost</th>
-                <th>Square Feet</th>
-                <th>City</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="listing in rc.forRentArray">
-                <td><img src="images/{{listing.image_path}}"></td>
-                <td>{{listing.cost}}</td>
-                <td>{{listing.sqft}}</td>
-                <td>{{listing.city}}</td>
-                <td><button ng-click="rc.deleteListing(listing.id)">Delete</button></td>
-            </tr>
-        </tbody>
-    </table> -->

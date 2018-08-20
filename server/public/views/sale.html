@@ -1,30 +1,21 @@
-<div ng-repeat="listing in sc.forSaleArray" class="card">
-    <button ng-click="sc.deleteListing(listing.id)">delete X</button>
-    <img ng-src="images/{{listing.image_path}}">
+<!-- display lowest price listing most prominently -->
+<div class="big-card">
+    <button class="delete" ng-click="sc.deleteListing(sc.lowestPrice.id)">delete X</button>
+    <img ng-src="images/{{sc.lowestPrice.image_path}}">
     <div>
-        <h2>${{listing.cost}}</h3>
-            <p>{{listing.sqft}} sq.ft.
-                <span> | </span>{{listing.city}}</p>
+        <h1>${{sc.lowestPrice.cost}}</h1>
+        <p>{{sc.lowestPrice.sqft}} sq.ft.
+            <span> | </span>{{sc.lowestPrice.city}}</p>
     </div>
 </div>
 
-<!-- <table>
-    <thead>
-        <tr>
-            <th>Photo</th>
-            <th>Cost</th>
-            <th>Square Feet</th>
-            <th>City</th>
-            <th>Delete</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr ng-repeat="listing in sc.forSaleArray">
-            <td><img ng-src="images/{{listing.image_path}}"></td>
-            <td>{{listing.cost}}</td>
-            <td>{{listing.sqft}}</td>
-            <td>{{listing.city}}</td>
-            <td><button ng-click="sc.deleteListing(listing.id)">Delete</button></td>
-        </tr>
-    </tbody>
-</table> -->
+<!-- repeat array of remaining listing -->
+<div ng-repeat="listing in sc.forSaleArray" class="card">
+    <button class="delete" ng-click="sc.deleteListing(listing.id)">delete X</button>
+    <img ng-src="images/{{listing.image_path}}">
+    <div>
+        <h2>${{listing.cost}}</h2>
+        <p>{{listing.sqft}} sq.ft.
+            <span> | </span>{{listing.city}}</p>
+    </div>
+</div>

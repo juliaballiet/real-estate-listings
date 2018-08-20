@@ -36,7 +36,7 @@ router.post('/', (req, res) => {
 })
 
 router.get('/sale', (req, res) => {
-    const query = `SELECT * FROM "listings" WHERE "type" = 'sale';`;
+    const query = `SELECT * FROM "listings" WHERE "type" = 'sale' ORDER BY "cost" ASC;`;
     pool.query(query).then((results) => {
         res.send(results.rows);
     }).catch((error) => {
